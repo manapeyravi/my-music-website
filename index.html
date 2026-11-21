@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favorite Music</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        p {
+            color: black;
+            font-size: 18px;
+        }
+
+        iframe {
+            border-radius: 10px;
+        }
+
+        .music-note {
+            font-size: 50px;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-25px);
+            }
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Favorite Music Website</h1>
+
+    <p>Welcome to my music website!</p>
+
+    <p>Music makes me happy and helps me relax.</p>
+
+    <h2>My Favorite Song</h2>
+
+    <iframe width="350" height="200"
+        src="https://www.youtube.com/embed/jfKfPfyJRdk"
+        allowfullscreen>
+    </iframe>
+
+    <h2>Enjoy the Music!</h2>
+
+    <div class="music-note" id="note">🎵</div>
+
+    <button onclick="changeMessage()">
+        Click Me!
+    </button>
+
+    <p id="message">Enjoy listening to music!</p>
+
+    <script>
+        function changeMessage() {
+            document.getElementById("message").innerHTML =
+            "Thank you for visiting my music website!";
+        }
+    </script>
+
+</body>
+</html>
